@@ -10,7 +10,7 @@ on:
 jobs:
   linter:
     name: Linters
-    runs-on: ubuntu-latest
+    runs-on: rocm
     timeout-minutes: 20
 
     steps:
@@ -64,7 +64,7 @@ jobs:
 
   testcpuimagenet:
     name: CPU and ImageNet to C Tests
-    runs-on: ubuntu-latest
+    runs-on: rocm
     timeout-minutes: 20
 
     steps:
@@ -92,7 +92,7 @@ jobs:
 
   testtorch:
     name: Torch Tests
-    runs-on: ubuntu-latest
+    runs-on: rocm
     timeout-minutes: 20
 
     steps:
@@ -313,7 +313,7 @@ jobs:
 
   #testunicorn:
   #  name: ARM64 unicorn Test
-  #  runs-on: ubuntu-latest
+  #  runs-on: rocm
   #  timeout-minutes: 20
   #  steps:
   #    - name: Checkout Code
