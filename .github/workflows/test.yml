@@ -10,7 +10,7 @@ on:
 jobs:
   linter:
     name: Linters
-    runs-on: rocm
+    runs-on: rocm #runs on rocm server
     timeout-minutes: 20
 
     steps:
