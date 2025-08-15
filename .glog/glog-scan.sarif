@@ -1,0 +1,326 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-eff8b47b-3415-4d12-b5d0-cdd9127e3e28",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe vulnerability \"Shell Process Initiation: Potential Injection Vulnerability Detected\" in Python refers to the potential for an attacker to inject malicious code or commands into the shell process. This is possible when user-supplied input is used in a shell command without proper sanitization or validation. In the provided code, the `os.system()` function is used to execute a shell command, and the command includes a user-supplied path. If an attacker can control the value of the path, they can potentially inject malicious commands.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using shell commands with user-supplied input whenever possible. If it's necessary to use shell commands, always validate and sanitize user-supplied input to ensure it doesn't contain any malicious commands or code. \n\n## Source Code Fix Recommendation\n\nInstead of using `os.system()`, use the `subprocess` module with a list of arguments. This way, the command and its arguments are passed to the system shell as separate arguments, which prevents shell injection attacks. Here's how you can modify the provided code:\n\n```python\nimport subprocess\nimport pathlib\n\npath = pathlib.Path(__file__).parent\nsubprocess.run(['cd', str(path), '&&', 'gcc', '-shared', 'disasm-a3xx.c', '-o', 'disasm.so'], shell=False)\n```\n\n## Library Dependencies\n\nThe code example requires the following Python libraries:\n\n- `os`\n- `pathlib`\n\n## References\n\n- [OWASP Command Injection](https://owasp.org/www-community/attacks/Command_Injection)\n- [CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](https://cwe.mitre.org/data/definitions/78.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B605"
+                ]
+              }
+            },
+            {
+              "id": "glog-0c65426f-ef56-454b-a008-e7a602b5650a",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Potential Unsafe Use of Temporary File/Directory\" vulnerability in Python refers to the insecure creation or use of temporary files or directories. This can lead to a variety of security issues, such as race conditions, where an attacker can create a symlink to a file with the same name before the program does, leading to the program writing to an unintended location.\n\nIn the provided code snippet, the program checks if a file named `tokenizer.model` exists in the `/tmp` directory. If it doesn't, it creates one. This can be exploited if an attacker creates a symlink with the same name pointing to a sensitive file, causing the program to overwrite that file instead.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, you should use secure methods for creating temporary files or directories. Python's `tempfile` module provides such methods, which create temporary files in the most secure manner possible, including using appropriate file permissions and avoiding race conditions.\n\n## Source Code Fix Recommendation\n\nHere's how you can fix the provided code snippet:\n\n```python\nimport tempfile\nimport os\n\nwith tempfile.NamedTemporaryFile(delete=False) as temp:\n    temp_name = temp.name\ncreate_fixed_tokenizer(temp_name)\n\nif not os.path.isfile(temp_name):\n    os.unlink(temp_name)\n```\n\nIn this fixed code, a temporary file is securely created using `tempfile.NamedTemporaryFile()`. The `delete=False` argument is used to prevent the file from being deleted when it's closed, allowing it to be used later in the program. The `os.unlink()` function is used to delete the temporary file when it's no longer needed.\n\n## Library Dependencies\n\nThe code example requires the following Python libraries:\n\n- `os`\n- `tempfile`\n\n## References\n\n- [OWASP - Insecure Temporary File](https://owasp.org/www-community/vulnerabilities/Insecure_Temporary_File)\n- [CWE-377: Insecure Temporary File](https://cwe.mitre.org/data/definitions/377.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B108"
+                ]
+              }
+            },
+            {
+              "id": "glog-0911f759-c758-41bb-b638-f42fbe840ec6",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Exec Usage Detected\" is a vulnerability in Python programming language that arises when the `exec()` function is used. The `exec()` function is a built-in Python function that executes the Python code contained within its arguments. This function can be a serious security risk if it is used to execute dynamic content, as it can allow an attacker to execute arbitrary Python code.\n\nThe specific vulnerability sink in the provided code is the `exec(python_code)` statement. This statement is executing the Python code contained in the `python_code` variable. If an attacker can control the content of `python_code`, they can execute arbitrary Python code.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using the `exec()` function to execute dynamic content. If you must execute dynamic Python code, use safer alternatives such as the `ast.literal_eval()` function, which only evaluates Python literals and does not execute arbitrary code.\n\n## Source Code Fix Recommendation\n\nReplace the `exec()` function with the `ast.literal_eval()` function:\n\n```python\nimport ast\n\nwith redirect_stdout(my_stdout): \n    ast.literal_eval(python_code)\n```\n\n## Library Dependencies\n\nThe code example requires the following library dependencies:\n\n- `contextlib` for the `redirect_stdout()` function\n- `ast` for the `literal_eval()` function\n\n## OWASP Resources\n\n- [OWASP Code Review Guide - Code Injection](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf)\n\n## Common Weakness Enumeration (CWE)\n\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B102"
+                ]
+              }
+            },
+            {
+              "id": "glog-1ea7c085-a5bf-461f-a886-f99c65b4f494",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Potential Unsafe Use of Temporary File/Directory\" vulnerability in Python refers to the insecure creation and use of temporary files or directories. This vulnerability can lead to a race condition where an attacker can create or modify the temporary file or directory during the small time window between when the file or directory is checked and when it is used. This can lead to unauthorized access, data corruption, or even code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use the `tempfile` module in Python which securely creates temporary files and directories. The `tempfile` module generates random names for temporary files and ensures that they are only readable and writable by the user running the program.\n\n## Source Code Fix Recommendation\n\nHere is a fixed version of the provided code:\n\n```python\nimport tempfile\n\nwith tempfile.NamedTemporaryFile(delete=False) as f:\n    temp_file_name = f.name\n    # Use 'temp_file_name' for operations on the file\n```\n\nIn this code, `tempfile.NamedTemporaryFile(delete=False)` is used to securely create a temporary file. The `delete=False` argument is used to ensure that the file is not deleted when it is closed, allowing for later use.\n\n## Library Dependencies\n\nThe code example requires the following Python standard library:\n\n- `tempfile`\n\n## References\n\n- [OWASP - Insecure Temporary File](https://owasp.org/www-community/vulnerabilities/Insecure_Temporary_File)\n- [CWE-377: Insecure Temporary File](https://cwe.mitre.org/data/definitions/377.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B108"
+                ]
+              }
+            },
+            {
+              "id": "glog-d3b09ada-0ede-4274-bc02-63e553ca0753",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Potential Temp File/Directory Security Risk\" vulnerability in Python programming language refers to the risk associated with the use of temporary files or directories in an insecure manner. This can lead to various security issues such as race conditions, unauthorized file access, and information disclosure. In the provided code snippet, the output file is being written to a fixed location in the /tmp directory. This can be exploited by an attacker to overwrite any file in the system or to read sensitive information.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use secure methods for creating temporary files or directories. Python's `tempfile` module provides functions for creating secure temporary files and directories, which are suitable for most applications.\n\n## Source Code Fix Recommendation\n\nHere is a fixed version of the code:\n\n```python\nimport tempfile\nimport subprocess\n\nwith tempfile.NamedTemporaryFile(suffix=\"_tf_test\") as temp:\n    subprocess.check_output(['clang', '-O2', '-lm', '-fPIC', '-x', 'c', '-', '-o', temp.name], input=prg.encode('utf-8'))\n```\n\n## Library Dependencies\n\nThe code example requires the following Python standard library modules to execute properly:\n\n- `subprocess`\n- `tempfile`\n\n## References\n\n- [CWE-377: Insecure Temporary File](https://cwe.mitre.org/data/definitions/377.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B108"
+                ]
+              }
+            },
+            {
+              "id": "glog-4e12e2aa-6ad0-4e55-a699-3fe9fd2e77cb",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Potential Unsafe Use of Temporary File/Directory\" vulnerability in Python refers to the insecure creation or use of temporary files or directories. This can lead to a variety of security issues, such as race conditions, where an attacker can create a symlink to a file with the same name before the program does, leading to the program writing to an unintended location. This can result in unauthorized access to data, data corruption, or even execution of arbitrary code.\n\nIn the provided code snippet, the default output file is set to \"/tmp/rendered.png\". This is potentially unsafe because \"/tmp\" is a world-writable directory, and an attacker could potentially replace \"rendered.png\" with a symlink to another file, causing the program to overwrite that file.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, you should use secure methods for creating temporary files or directories. Python's `tempfile` module provides functions for creating temporary files and directories in a secure manner.\n\n## Source Code Fix Recommendation\n\nHere's how you can modify the provided code snippet to use a secure temporary file:\n\n```python\nimport tempfile\n\n# Create a secure temporary file\ntemp_file = tempfile.NamedTemporaryFile(delete=False)\n\nparser.add_argument('--out', type=str, default=temp_file.name, help=\"Output filename\")\n```\n\nIn this code, `tempfile.NamedTemporaryFile(delete=False)` creates a temporary file in a secure manner. The `delete=False` argument means that the file won't be deleted when it's closed, which is necessary because the file needs to exist when the argument parser uses it.\n\n## Library Dependencies\n\nThe code example requires the following Python libraries:\n\n- `argparse`: for parsing command-line arguments.\n- `tempfile`: for creating temporary files in a secure manner.\n\n## References\n\n- [CWE-377: Insecure Temporary File](https://cwe.mitre.org/data/definitions/377.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B108"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-eff8b47b-3415-4d12-b5d0-cdd9127e3e28",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "\"Shell Process Initiation: Potential Injection Vulnerability Detected\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/__init__.py"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 7,
+                  "endLine": 12,
+                  "endColumn": 97,
+                  "snippet": {
+                    "text": "      os.system(f'cd {pathlib.Path(__file__).parent} && gcc -shared disasm-a3xx.c -o disasm.so')\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 11,
+                  "endLine": 13,
+                  "snippet": {
+                    "text": "    if not shared.is_file():\n      os.system(f'cd {pathlib.Path(__file__).parent} && gcc -shared disasm-a3xx.c -o disasm.so')\n    fxn = ctypes.CDLL(shared.as_posix())['disasm']\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-0c65426f-ef56-454b-a008-e7a602b5650a",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential Unsafe Use of Temporary File/Directory"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/coder.py"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 73,
+                  "endLine": 40,
+                  "endColumn": 95,
+                  "snippet": {
+                    "text": "  if not os.path.isfile(\"/tmp/tokenizer.model\"): create_fixed_tokenizer(\"/tmp/tokenizer.model\")\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 39,
+                  "endLine": 41,
+                  "snippet": {
+                    "text": "\n  if not os.path.isfile(\"/tmp/tokenizer.model\"): create_fixed_tokenizer(\"/tmp/tokenizer.model\")\n  spp = SentencePieceProcessor(model_file=\"/tmp/tokenizer.model\")\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "MEDIUM"
+          }
+        },
+        {
+          "ruleId": "glog-0911f759-c758-41bb-b638-f42fbe840ec6",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Exec Usage Detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/coder.py"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 46,
+                  "endLine": 88,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "            with redirect_stdout(my_stdout): exec(python_code)\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 87,
+                  "endLine": 89,
+                  "snippet": {
+                    "text": "          try:\n            with redirect_stdout(my_stdout): exec(python_code)\n            result = my_stdout.getvalue()\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-1ea7c085-a5bf-461f-a886-f99c65b4f494",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential Unsafe Use of Temporary File/Directory"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/compile_tensorflow.py"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 13,
+                  "endLine": 54,
+                  "endColumn": 30,
+                  "snippet": {
+                    "text": "  with open(\"/tmp/tf_weights\", \"wb\") as f:\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 53,
+                  "endLine": 55,
+                  "snippet": {
+                    "text": "  # write the weights to disk\n  with open(\"/tmp/tf_weights\", \"wb\") as f:\n    f.write(weights)\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "MEDIUM"
+          }
+        },
+        {
+          "ruleId": "glog-d3b09ada-0ede-4274-bc02-63e553ca0753",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential Temp File/Directory Security Risk"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/compile_tensorflow.py"
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 82,
+                  "endLine": 81,
+                  "endColumn": 96,
+                  "snippet": {
+                    "text": "  subprocess.check_output(['clang', '-O2', '-lm', '-fPIC', '-x', 'c', '-', '-o', \"/tmp/tf_test\"], input=prg.encode('utf-8'))\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 80,
+                  "endLine": 82,
+                  "snippet": {
+                    "text": "  # add test weights\n  subprocess.check_output(['clang', '-O2', '-lm', '-fPIC', '-x', 'c', '-', '-o', \"/tmp/tf_test\"], input=prg.encode('utf-8'))\n\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "MEDIUM"
+          }
+        },
+        {
+          "ruleId": "glog-4e12e2aa-6ad0-4e55-a699-3fe9fd2e77cb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential Unsafe Use of Temporary File/Directory"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/mask_rcnn.py"
+                },
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 50,
+                  "endLine": 284,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "  parser.add_argument('--out', type=str, default=\"/tmp/rendered.png\", help=\"Output filename\")\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 283,
+                  "endLine": 285,
+                  "snippet": {
+                    "text": "  parser.add_argument('--size_scale', type=float, default=1.0, help=\"Image resize multiplier\")\n  parser.add_argument('--out', type=str, default=\"/tmp/rendered.png\", help=\"Output filename\")\n  args = parser.parse_args()\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "MEDIUM"
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
