@@ -12,6 +12,30 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
+              "id": "4602bdc3-ff8d-314d-8d29-17584e7e3aa1",
+              "name": "resources.rules.raptor-memory-address-exposure",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-memory-address-exposure"
+              },
+              "fullDescription": {
+                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/200](https://cwe.mitre.org/data/definitions/200)\n - [https://cwe.mitre.org/data/definitions/209](https://cwe.mitre.org/data/definitions/209)\n - [https://cwe.mitre.org/data/definitions/497](https://cwe.mitre.org/data/definitions/497)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-memory-address-exposure"
+                ]
+              }
+            },
+            {
               "id": "74a9a005-5371-361b-b8ee-b6332f0f5440",
               "name": "resources.rules.dangerous-system-call",
               "shortDescription": {
@@ -37,30 +61,6 @@
             },
             {
               "id": "4364ff3c-2dbc-3880-b160-ecc7b3ab6116",
-              "name": "resources.rules.raptor-memory-address-exposure",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-memory-address-exposure"
-              },
-              "fullDescription": {
-                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/200](https://cwe.mitre.org/data/definitions/200)\n - [https://cwe.mitre.org/data/definitions/209](https://cwe.mitre.org/data/definitions/209)\n - [https://cwe.mitre.org/data/definitions/497](https://cwe.mitre.org/data/definitions/497)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-memory-address-exposure"
-                ]
-              }
-            },
-            {
-              "id": "4602bdc3-ff8d-314d-8d29-17584e7e3aa1",
               "name": "resources.rules.raptor-memory-address-exposure",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-memory-address-exposure"
@@ -156,6 +156,30 @@
               }
             },
             {
+              "id": "a6f78e54-fd34-339c-92c6-10c68d87e979",
+              "name": "resources.rules.raptor-memory-address-exposure",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-memory-address-exposure"
+              },
+              "fullDescription": {
+                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/200](https://cwe.mitre.org/data/definitions/200)\n - [https://cwe.mitre.org/data/definitions/209](https://cwe.mitre.org/data/definitions/209)\n - [https://cwe.mitre.org/data/definitions/497](https://cwe.mitre.org/data/definitions/497)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-memory-address-exposure"
+                ]
+              }
+            },
+            {
               "id": "e839c464-5912-3275-90f3-2923315a821b",
               "name": "resources.rules.raptor-memory-address-exposure",
               "shortDescription": {
@@ -180,26 +204,26 @@
               }
             },
             {
-              "id": "a6f78e54-fd34-339c-92c6-10c68d87e979",
-              "name": "resources.rules.raptor-memory-address-exposure",
+              "id": "5cbd9348-a7f2-3d7f-a641-ca425e6b883c",
+              "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-memory-address-exposure"
+                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
               },
               "fullDescription": {
-                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR."
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "note"
+                "level": "warning"
               },
               "help": {
-                "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/200](https://cwe.mitre.org/data/definitions/200)\n - [https://cwe.mitre.org/data/definitions/209](https://cwe.mitre.org/data/definitions/209)\n - [https://cwe.mitre.org/data/definitions/497](https://cwe.mitre.org/data/definitions/497)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n"
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.raptor-memory-address-exposure"
+                  "resources.rules.raptor-signed-unsigned-conversion"
                 ]
               }
             },
@@ -276,31 +300,7 @@
               }
             },
             {
-              "id": "5cbd9348-a7f2-3d7f-a641-ca425e6b883c",
-              "name": "resources.rules.raptor-signed-unsigned-conversion",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
-              },
-              "fullDescription": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-signed-unsigned-conversion"
-                ]
-              }
-            },
-            {
-              "id": "c4cfba39-bc2c-3f62-a966-2c8e417fa15a",
+              "id": "4f8621b3-6741-3716-a7a6-2cc3e5351f92",
               "name": "resources.rules.raptor-memory-address-exposure",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-memory-address-exposure"
@@ -348,7 +348,7 @@
               }
             },
             {
-              "id": "4f8621b3-6741-3716-a7a6-2cc3e5351f92",
+              "id": "c4cfba39-bc2c-3f62-a966-2c8e417fa15a",
               "name": "resources.rules.raptor-memory-address-exposure",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-memory-address-exposure"
@@ -396,7 +396,7 @@
               }
             },
             {
-              "id": "ed6a18e8-553c-30c5-b28b-35fc150ba380",
+              "id": "dd13f50b-b45e-35dc-9527-0964c6a18027",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -420,7 +420,7 @@
               }
             },
             {
-              "id": "dd13f50b-b45e-35dc-9527-0964c6a18027",
+              "id": "ed6a18e8-553c-30c5-b28b-35fc150ba380",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -492,6 +492,30 @@
               }
             },
             {
+              "id": "b60fb930-c06a-3cc6-8ad6-98674d1e4bbb",
+              "name": "resources.rules.raptor-signed-unsigned-conversion",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
+              },
+              "fullDescription": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-signed-unsigned-conversion"
+                ]
+              }
+            },
+            {
               "id": "ac0a0bb3-f545-301b-a4a9-1f5c991baf94",
               "name": "resources.rules.raptor-suspicious-assert",
               "shortDescription": {
@@ -540,79 +564,7 @@
               }
             },
             {
-              "id": "b60fb930-c06a-3cc6-8ad6-98674d1e4bbb",
-              "name": "resources.rules.raptor-signed-unsigned-conversion",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
-              },
-              "fullDescription": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-signed-unsigned-conversion"
-                ]
-              }
-            },
-            {
               "id": "ebba3743-ec29-3671-83ac-e458a2a5219a",
-              "name": "resources.rules.raptor-signed-unsigned-conversion",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
-              },
-              "fullDescription": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-signed-unsigned-conversion"
-                ]
-              }
-            },
-            {
-              "id": "ad5bd98a-2e87-327b-bda5-f52d4da7e000",
-              "name": "resources.rules.raptor-signed-unsigned-conversion",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
-              },
-              "fullDescription": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-signed-unsigned-conversion"
-                ]
-              }
-            },
-            {
-              "id": "39dcc581-0463-31ed-aa02-71b2149358b9",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -660,6 +612,54 @@
               }
             },
             {
+              "id": "39dcc581-0463-31ed-aa02-71b2149358b9",
+              "name": "resources.rules.raptor-signed-unsigned-conversion",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
+              },
+              "fullDescription": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-signed-unsigned-conversion"
+                ]
+              }
+            },
+            {
+              "id": "ad5bd98a-2e87-327b-bda5-f52d4da7e000",
+              "name": "resources.rules.raptor-signed-unsigned-conversion",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
+              },
+              "fullDescription": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-signed-unsigned-conversion"
+                ]
+              }
+            },
+            {
               "id": "d15e20c5-9140-3250-a5a7-26197edd4d98",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
@@ -684,7 +684,7 @@
               }
             },
             {
-              "id": "13119517-369c-3787-a577-45b656ef5be0",
+              "id": "306e534c-58c8-39ee-ac51-5621db696466",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -708,7 +708,7 @@
               }
             },
             {
-              "id": "306e534c-58c8-39ee-ac51-5621db696466",
+              "id": "13119517-369c-3787-a577-45b656ef5be0",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -804,30 +804,6 @@
               }
             },
             {
-              "id": "d7ed3405-c517-3e68-ad06-f30411f7bab5",
-              "name": "resources.rules.raptor-suspicious-assert",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-suspicious-assert"
-              },
-              "fullDescription": {
-                "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://legends2k.github.io/note/assert_vs_if/](https://legends2k.github.io/note/assert_vs_if/)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-suspicious-assert"
-                ]
-              }
-            },
-            {
               "id": "8c644cf4-4526-335f-b858-d8b2c84e4f0b",
               "name": "resources.rules.raptor-suspicious-assert",
               "shortDescription": {
@@ -852,7 +828,55 @@
               }
             },
             {
+              "id": "d7ed3405-c517-3e68-ad06-f30411f7bab5",
+              "name": "resources.rules.raptor-suspicious-assert",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-suspicious-assert"
+              },
+              "fullDescription": {
+                "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://legends2k.github.io/note/assert_vs_if/](https://legends2k.github.io/note/assert_vs_if/)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-suspicious-assert"
+                ]
+              }
+            },
+            {
               "id": "51640982-3f38-38b6-a9d5-9b7d774d4e68",
+              "name": "resources.rules.raptor-signed-unsigned-conversion",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
+              },
+              "fullDescription": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-signed-unsigned-conversion"
+                ]
+              }
+            },
+            {
+              "id": "2b3d4794-31ef-3956-91b7-3a9194796740",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -920,30 +944,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.return-in-init"
-                ]
-              }
-            },
-            {
-              "id": "2b3d4794-31ef-3956-91b7-3a9194796740",
-              "name": "resources.rules.raptor-signed-unsigned-conversion",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
-              },
-              "fullDescription": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-signed-unsigned-conversion"
                 ]
               }
             },
@@ -1117,30 +1117,6 @@
               }
             },
             {
-              "id": "d7bfa525-9665-3d53-bc2d-94a88f47bd23",
-              "name": "resources.rules.return-in-init",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.return-in-init"
-              },
-              "fullDescription": {
-                "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "`return` should never appear inside a class __init__ function. This will cause a runtime error.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.return-in-init"
-                ]
-              }
-            },
-            {
               "id": "da4f3c8e-dd8b-3e92-a972-999fc243bf0a",
               "name": "html.security.audit.missing-integrity.missing-integrity",
               "shortDescription": {
@@ -1162,6 +1138,30 @@
                 "precision": "very-high",
                 "tags": [
                   "html.security.audit.missing-integrity.missing-integrity"
+                ]
+              }
+            },
+            {
+              "id": "d7bfa525-9665-3d53-bc2d-94a88f47bd23",
+              "name": "resources.rules.return-in-init",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.return-in-init"
+              },
+              "fullDescription": {
+                "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "`return` should never appear inside a class __init__ function. This will cause a runtime error.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.return-in-init"
                 ]
               }
             },
@@ -1214,7 +1214,7 @@
               }
             },
             {
-              "id": "9307f797-a81e-3f37-b088-825b6407777c",
+              "id": "7d646895-88d4-3745-a2c5-dde10aa8f638",
               "name": "resources.rules.return-not-in-function",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-not-in-function"
@@ -1238,7 +1238,7 @@
               }
             },
             {
-              "id": "7d646895-88d4-3745-a2c5-dde10aa8f638",
+              "id": "9307f797-a81e-3f37-b088-825b6407777c",
               "name": "resources.rules.return-not-in-function",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-not-in-function"
@@ -1385,30 +1385,6 @@
               }
             },
             {
-              "id": "6de61cfa-2e19-39e0-81d4-faca9165366b",
-              "name": "resources.rules.pass-body-fn",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.pass-body-fn"
-              },
-              "fullDescription": {
-                "text": "`pass` is the body of function $X. Consider removing this or raise NotImplementedError() if this is a TODO"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "`pass` is the body of function $X. Consider removing this or raise NotImplementedError() if this is a TODO\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "`pass` is the body of function $X. Consider removing this or raise NotImplementedError() if this is a TODO\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.pass-body-fn"
-                ]
-              }
-            },
-            {
               "id": "ec8f086b-4118-3520-b88e-37ed57a55a8c",
               "name": "python.lang.security.dangerous-globals-use.dangerous-globals-use",
               "shortDescription": {
@@ -1459,6 +1435,30 @@
               }
             },
             {
+              "id": "6de61cfa-2e19-39e0-81d4-faca9165366b",
+              "name": "resources.rules.pass-body-fn",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.pass-body-fn"
+              },
+              "fullDescription": {
+                "text": "`pass` is the body of function $X. Consider removing this or raise NotImplementedError() if this is a TODO"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "`pass` is the body of function $X. Consider removing this or raise NotImplementedError() if this is a TODO\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "`pass` is the body of function $X. Consider removing this or raise NotImplementedError() if this is a TODO\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.pass-body-fn"
+                ]
+              }
+            },
+            {
               "id": "9db78396-728e-3b60-9b82-a2a72de1ca85",
               "name": "resources.rules.pass-body-fn",
               "shortDescription": {
@@ -1483,7 +1483,7 @@
               }
             },
             {
-              "id": "5a2870e9-491b-3560-b071-1527a5b812d2",
+              "id": "2e04e563-0c84-3f68-8ac5-87cae8f6cd33",
               "name": "resources.rules.pass-body-fn",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.pass-body-fn"
@@ -1507,7 +1507,7 @@
               }
             },
             {
-              "id": "2e04e563-0c84-3f68-8ac5-87cae8f6cd33",
+              "id": "5a2870e9-491b-3560-b071-1527a5b812d2",
               "name": "resources.rules.pass-body-fn",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.pass-body-fn"
@@ -3195,7 +3195,7 @@
               }
             },
             {
-              "id": "36350bd2-753e-3dbe-aac2-3c9112b617f9",
+              "id": "b334b3eb-6141-35b8-8259-94f64a620d51",
               "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
               "shortDescription": {
                 "text": "Opengrep Finding: python.lang.security.audit.formatted-sql-query.formatted-sql-query"
@@ -3220,7 +3220,7 @@
               }
             },
             {
-              "id": "b334b3eb-6141-35b8-8259-94f64a620d51",
+              "id": "36350bd2-753e-3dbe-aac2-3c9112b617f9",
               "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
               "shortDescription": {
                 "text": "Opengrep Finding: python.lang.security.audit.formatted-sql-query.formatted-sql-query"
@@ -4767,30 +4767,6 @@
               }
             },
             {
-              "id": "bb232b76-ab76-3ce0-a184-4bee3dd08d31",
-              "name": "resources.rules.useless-literal-dict",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.useless-literal-dict"
-              },
-              "fullDescription": {
-                "text": "key `$X` is uselessly assigned twice"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "key `$X` is uselessly assigned twice\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "key `$X` is uselessly assigned twice\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.useless-literal-dict"
-                ]
-              }
-            },
-            {
               "id": "a329cc61-8eef-3b36-95eb-81ef58718567",
               "name": "python.lang.security.audit.eval-detected.eval-detected",
               "shortDescription": {
@@ -4812,6 +4788,30 @@
                 "precision": "very-high",
                 "tags": [
                   "python.lang.security.audit.eval-detected.eval-detected"
+                ]
+              }
+            },
+            {
+              "id": "bb232b76-ab76-3ce0-a184-4bee3dd08d31",
+              "name": "resources.rules.useless-literal-dict",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.useless-literal-dict"
+              },
+              "fullDescription": {
+                "text": "key `$X` is uselessly assigned twice"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "key `$X` is uselessly assigned twice\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "key `$X` is uselessly assigned twice\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.useless-literal-dict"
                 ]
               }
             },
@@ -5610,6 +5610,31 @@
               }
             },
             {
+              "id": "fdac3c55-0f57-3809-93de-a94eae8ca805",
+              "name": "python.lang.security.deserialization.pickle.avoid-pickle",
+              "shortDescription": {
+                "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
+              },
+              "fullDescription": {
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
+              "help": {
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle)\n - [https://docs.python.org/3/library/pickle.html](https://docs.python.org/3/library/pickle.html)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "python.lang.security.deserialization.pickle.avoid-pickle"
+                ]
+              }
+            },
+            {
               "id": "9373f6e3-8005-35ba-b4b9-9d71b07e1664",
               "name": "resources.rules.dangerous-system-call",
               "shortDescription": {
@@ -5683,31 +5708,6 @@
               }
             },
             {
-              "id": "50c16f3a-02e2-312d-8790-dd485015ced6",
-              "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
-              "shortDescription": {
-                "text": "Opengrep Finding: python.lang.security.audit.formatted-sql-query.formatted-sql-query"
-              },
-              "fullDescription": {
-                "text": "Detected possible formatted SQL query. Use parameterized queries instead."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/python.lang.security.audit.formatted-sql-query.formatted-sql-query",
-              "help": {
-                "text": "Detected possible formatted SQL query. Use parameterized queries instead.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Detected possible formatted SQL query. Use parameterized queries instead.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.audit.formatted-sql-query.formatted-sql-query)\n - [https://stackoverflow.com/questions/775296/mysql-parameterized-queries](https://stackoverflow.com/questions/775296/mysql-parameterized-queries)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "python.lang.security.audit.formatted-sql-query.formatted-sql-query"
-                ]
-              }
-            },
-            {
               "id": "082c14db-2b9f-3ab1-b80d-9a330ea73a60",
               "name": "python.lang.security.deserialization.pickle.avoid-pickle",
               "shortDescription": {
@@ -5729,6 +5729,31 @@
                 "precision": "very-high",
                 "tags": [
                   "python.lang.security.deserialization.pickle.avoid-pickle"
+                ]
+              }
+            },
+            {
+              "id": "50c16f3a-02e2-312d-8790-dd485015ced6",
+              "name": "python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+              "shortDescription": {
+                "text": "Opengrep Finding: python.lang.security.audit.formatted-sql-query.formatted-sql-query"
+              },
+              "fullDescription": {
+                "text": "Detected possible formatted SQL query. Use parameterized queries instead."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/python.lang.security.audit.formatted-sql-query.formatted-sql-query",
+              "help": {
+                "text": "Detected possible formatted SQL query. Use parameterized queries instead.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Detected possible formatted SQL query. Use parameterized queries instead.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.audit.formatted-sql-query.formatted-sql-query)\n - [https://stackoverflow.com/questions/775296/mysql-parameterized-queries](https://stackoverflow.com/questions/775296/mysql-parameterized-queries)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "python.lang.security.audit.formatted-sql-query.formatted-sql-query"
                 ]
               }
             },
@@ -5782,30 +5807,6 @@
               }
             },
             {
-              "id": "a0171b88-aafd-349b-bb76-08bed5f12e3a",
-              "name": "resources.rules.return-not-in-function",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.return-not-in-function"
-              },
-              "fullDescription": {
-                "text": "`return` only makes sense inside a function"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "`return` only makes sense inside a function\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "`return` only makes sense inside a function\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.return-not-in-function"
-                ]
-              }
-            },
-            {
               "id": "5cbc6814-c497-3120-a6b1-c20887103377",
               "name": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected",
               "shortDescription": {
@@ -5827,6 +5828,30 @@
                 "precision": "very-high",
                 "tags": [
                   "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected"
+                ]
+              }
+            },
+            {
+              "id": "a0171b88-aafd-349b-bb76-08bed5f12e3a",
+              "name": "resources.rules.return-not-in-function",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.return-not-in-function"
+              },
+              "fullDescription": {
+                "text": "`return` only makes sense inside a function"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "`return` only makes sense inside a function\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "`return` only makes sense inside a function\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.return-not-in-function"
                 ]
               }
             },
@@ -6815,30 +6840,6 @@
               }
             },
             {
-              "id": "57605913-21e0-3fee-8db4-92afbc20f917",
-              "name": "resources.rules.tempfile-without-flush",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.tempfile-without-flush"
-              },
-              "fullDescription": {
-                "text": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.tempfile-without-flush"
-                ]
-              }
-            },
-            {
               "id": "686bbfb6-bb88-3463-a879-5d64c8ae24ac",
               "name": "resources.rules.tempfile-without-flush",
               "shortDescription": {
@@ -7271,7 +7272,7 @@
               }
             },
             {
-              "id": "fc9cff88-957e-3e09-b77f-cbd133040ed2",
+              "id": "a2383e02-4760-30ed-9bd8-dd6c2ffc7faf",
               "name": "resources.rules.return-in-init",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-in-init"
@@ -7295,7 +7296,7 @@
               }
             },
             {
-              "id": "a2383e02-4760-30ed-9bd8-dd6c2ffc7faf",
+              "id": "fc9cff88-957e-3e09-b77f-cbd133040ed2",
               "name": "resources.rules.return-in-init",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-in-init"
@@ -7367,6 +7368,30 @@
               }
             },
             {
+              "id": "347fd815-a97d-395f-8148-9760a7522f2e",
+              "name": "resources.rules.insecure-hash-algorithm-md5",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.insecure-hash-algorithm-md5"
+              },
+              "fullDescription": {
+                "text": "Detected MD5 hash algorithm which is considered insecure. MD5 is not\ncollision resistant and is therefore not suitable as a cryptographic\nsignature. Use SHA256 or SHA3 instead.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Detected MD5 hash algorithm which is considered insecure. MD5 is not\ncollision resistant and is therefore not suitable as a cryptographic\nsignature. Use SHA256 or SHA3 instead.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Detected MD5 hash algorithm which is considered insecure. MD5 is not\ncollision resistant and is therefore not suitable as a cryptographic\nsignature. Use SHA256 or SHA3 instead.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://tools.ietf.org/html/rfc6151](https://tools.ietf.org/html/rfc6151)\n - [https://crypto.stackexchange.com/questions/44151/how-does-the-flame-malware-take-advantage-of-md5-collision](https://crypto.stackexchange.com/questions/44151/how-does-the-flame-malware-take-advantage-of-md5-collision)\n - [https://pycryptodome.readthedocs.io/en/latest/src/hash/sha3_256.html](https://pycryptodome.readthedocs.io/en/latest/src/hash/sha3_256.html)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.insecure-hash-algorithm-md5"
+                ]
+              }
+            },
+            {
               "id": "7d31b4e3-d5ac-3c9f-b33d-1cd2c19de787",
               "name": "resources.rules.dangerous-system-call",
               "shortDescription": {
@@ -7391,26 +7416,26 @@
               }
             },
             {
-              "id": "347fd815-a97d-395f-8148-9760a7522f2e",
-              "name": "resources.rules.insecure-hash-algorithm-md5",
+              "id": "b1379111-86b9-3856-9fa6-ba6d6633c705",
+              "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.insecure-hash-algorithm-md5"
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
               },
               "fullDescription": {
-                "text": "Detected MD5 hash algorithm which is considered insecure. MD5 is not\ncollision resistant and is therefore not suitable as a cryptographic\nsignature. Use SHA256 or SHA3 instead.\n"
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "warning"
+                "level": "error"
               },
               "help": {
-                "text": "Detected MD5 hash algorithm which is considered insecure. MD5 is not\ncollision resistant and is therefore not suitable as a cryptographic\nsignature. Use SHA256 or SHA3 instead.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Detected MD5 hash algorithm which is considered insecure. MD5 is not\ncollision resistant and is therefore not suitable as a cryptographic\nsignature. Use SHA256 or SHA3 instead.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://tools.ietf.org/html/rfc6151](https://tools.ietf.org/html/rfc6151)\n - [https://crypto.stackexchange.com/questions/44151/how-does-the-flame-malware-take-advantage-of-md5-collision](https://crypto.stackexchange.com/questions/44151/how-does-the-flame-malware-take-advantage-of-md5-collision)\n - [https://pycryptodome.readthedocs.io/en/latest/src/hash/sha3_256.html](https://pycryptodome.readthedocs.io/en/latest/src/hash/sha3_256.html)\n"
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.insecure-hash-algorithm-md5"
+                  "resources.rules.dlint-catastrophic-redos"
                 ]
               }
             },
@@ -7436,30 +7461,6 @@
                 "precision": "very-high",
                 "tags": [
                   "python.lang.security.deserialization.pickle.avoid-pickle"
-                ]
-              }
-            },
-            {
-              "id": "b1379111-86b9-3856-9fa6-ba6d6633c705",
-              "name": "resources.rules.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dlint-catastrophic-redos"
                 ]
               }
             },
@@ -7499,6 +7500,37 @@
       },
       "language": "en-US",
       "results": [
+        {
+          "ruleId": "4602bdc3-ff8d-314d-8d29-17584e7e3aa1",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/disasm-a3xx.c",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 224,
+                  "startColumn": 5,
+                  "endLine": 225,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "    fprintf(ctx->out, \" %sp0.%c\", cat0->inv0 ? \"!\" : \"\",\n        component[cat0->comp0]);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "92927855d31c5d40bebae92c34a92e2e45a6577708ed5d3ae05688cc8925849278172e64d85114d6d69f4908b74125a522fe389e362e3420e21d11dd6baa52fb_0"
+          },
+          "properties": {}
+        },
         {
           "ruleId": "74a9a005-5371-361b-b8ee-b6332f0f5440",
           "kind": "fail",
@@ -7558,37 +7590,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "25c482d04c5e1ec149efad1ac024323ae57f00611906735fd3e6f4051e0b2c13c072227140da890cd81e0bee138d14af19380f91a368aaf2158c9d397b24aee2_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "4602bdc3-ff8d-314d-8d29-17584e7e3aa1",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/disasm-a3xx.c",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 224,
-                  "startColumn": 5,
-                  "endLine": 225,
-                  "endColumn": 32,
-                  "snippet": {
-                    "text": "    fprintf(ctx->out, \" %sp0.%c\", cat0->inv0 ? \"!\" : \"\",\n        component[cat0->comp0]);"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "92927855d31c5d40bebae92c34a92e2e45a6577708ed5d3ae05688cc8925849278172e64d85114d6d69f4908b74125a522fe389e362e3420e21d11dd6baa52fb_0"
           },
           "properties": {}
         },
@@ -7686,6 +7687,37 @@
           "properties": {}
         },
         {
+          "ruleId": "a6f78e54-fd34-339c-92c6-10c68d87e979",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/disasm-a3xx.c",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 52,
+                  "snippet": {
+                    "text": "    fprintf(ctx->out, \"\\t{1: %x}\", cat1->must_be_0);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "7336b864c7643c88167d580e2b425ff95305f01bd6d3e6baded3efcb04444a30cbbe53a016138e7aa93bc6207293149ed54502f49b8f0a8e149b2a396e5875ae_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "e839c464-5912-3275-90f3-2923315a821b",
           "kind": "fail",
           "level": "warning",
@@ -7717,11 +7749,11 @@
           "properties": {}
         },
         {
-          "ruleId": "a6f78e54-fd34-339c-92c6-10c68d87e979",
+          "ruleId": "5cbd9348-a7f2-3d7f-a641-ca425e6b883c",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "The software generates an error message that includes sensitive information about its environment, users, or associated data. In particular, exposure of memory addresses might defeat ASLR."
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
           },
           "locations": [
             {
@@ -7731,19 +7763,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 318,
-                  "startColumn": 5,
-                  "endLine": 318,
-                  "endColumn": 52,
+                  "startLine": 596,
+                  "startColumn": 14,
+                  "endLine": 596,
+                  "endColumn": 71,
                   "snippet": {
-                    "text": "    fprintf(ctx->out, \"\\t{1: %x}\", cat1->must_be_0);"
+                    "text": "    unsigned base = (cat5->s2en_bindless.base_hi << 1) | cat5->base_lo;"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "7336b864c7643c88167d580e2b425ff95305f01bd6d3e6baded3efcb04444a30cbbe53a016138e7aa93bc6207293149ed54502f49b8f0a8e149b2a396e5875ae_0"
+            "matchBasedId/v1": "f3854549703a061b1b9dc43a3b101458de54b34cdec241f7b54192e39ee8231569d19eda48b9e837030d48364ffadc7ca9da8c551a796b801c215755b8545130_0"
           },
           "properties": {}
         },
@@ -7841,38 +7873,7 @@
           "properties": {}
         },
         {
-          "ruleId": "5cbd9348-a7f2-3d7f-a641-ca425e6b883c",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/disasm-a3xx.c",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 596,
-                  "startColumn": 14,
-                  "endLine": 596,
-                  "endColumn": 71,
-                  "snippet": {
-                    "text": "    unsigned base = (cat5->s2en_bindless.base_hi << 1) | cat5->base_lo;"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "f3854549703a061b1b9dc43a3b101458de54b34cdec241f7b54192e39ee8231569d19eda48b9e837030d48364ffadc7ca9da8c551a796b801c215755b8545130_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "c4cfba39-bc2c-3f62-a966-2c8e417fa15a",
+          "ruleId": "4f8621b3-6741-3716-a7a6-2cc3e5351f92",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -7886,19 +7887,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 854,
-                  "startColumn": 9,
-                  "endLine": 855,
-                  "endColumn": 49,
+                  "startLine": 895,
+                  "startColumn": 7,
+                  "endLine": 895,
+                  "endColumn": 113,
                   "snippet": {
-                    "text": "        fprintf(ctx->out, \" (pad0=%x, pad3=%x, mustbe0=%x)\", cat6->ldgb.pad0,\n            cat6->ldgb.pad3, cat6->ldgb.mustbe0);"
+                    "text": "      fprintf(ctx->out, \" (pad0=%x, pad3=%x, mustbe0=%x)\", cat6->ldgb.pad0, cat6->ldgb.pad3, cat6->ldgb.mustbe0);"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "8c51577b148bcb937b1b85308af03b705c896b509cd9b4a534b4536a42beabbadf28afcad4bd0fa7661f551f854b420e0cdf66d9a362f961ce81bd48ae2e5d8f_0"
+            "matchBasedId/v1": "8c51577b148bcb937b1b85308af03b705c896b509cd9b4a534b4536a42beabbadf28afcad4bd0fa7661f551f854b420e0cdf66d9a362f961ce81bd48ae2e5d8f_1"
           },
           "properties": {}
         },
@@ -7934,7 +7935,7 @@
           "properties": {}
         },
         {
-          "ruleId": "4f8621b3-6741-3716-a7a6-2cc3e5351f92",
+          "ruleId": "c4cfba39-bc2c-3f62-a966-2c8e417fa15a",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -7948,19 +7949,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 895,
-                  "startColumn": 7,
-                  "endLine": 895,
-                  "endColumn": 113,
+                  "startLine": 854,
+                  "startColumn": 9,
+                  "endLine": 855,
+                  "endColumn": 49,
                   "snippet": {
-                    "text": "      fprintf(ctx->out, \" (pad0=%x, pad3=%x, mustbe0=%x)\", cat6->ldgb.pad0, cat6->ldgb.pad3, cat6->ldgb.mustbe0);"
+                    "text": "        fprintf(ctx->out, \" (pad0=%x, pad3=%x, mustbe0=%x)\", cat6->ldgb.pad0,\n            cat6->ldgb.pad3, cat6->ldgb.mustbe0);"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "8c51577b148bcb937b1b85308af03b705c896b509cd9b4a534b4536a42beabbadf28afcad4bd0fa7661f551f854b420e0cdf66d9a362f961ce81bd48ae2e5d8f_1"
+            "matchBasedId/v1": "8c51577b148bcb937b1b85308af03b705c896b509cd9b4a534b4536a42beabbadf28afcad4bd0fa7661f551f854b420e0cdf66d9a362f961ce81bd48ae2e5d8f_0"
           },
           "properties": {}
         },
@@ -7996,37 +7997,6 @@
           "properties": {}
         },
         {
-          "ruleId": "ed6a18e8-553c-30c5-b28b-35fc150ba380",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/disasm-a3xx.c",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1350,
-                  "startColumn": 5,
-                  "endLine": 1350,
-                  "endColumn": 56,
-                  "snippet": {
-                    "text": "    nop = (instr->cat2.src2_r * 2) + instr->cat2.src1_r;"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "f594c4c1a4f8bcdf8919822ccdb719103e9f89985c672e81106d0764fbb2a131fd84b9f1793697bda4c4ab5465450a21628d05c8bf9099cd8cc0f5402e641607_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "dd13f50b-b45e-35dc-9527-0964c6a18027",
           "kind": "fail",
           "level": "warning",
@@ -8054,6 +8024,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "acfce8ffa2b4d6c727fced1eb28c10d0fa1b0a73d9ea571f592425fa8f3c4957c025bdabe371fb0605f30d0c7d1e34684816088ca6601ac90ba892e208ab6be0_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "ed6a18e8-553c-30c5-b28b-35fc150ba380",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/disasm-a3xx.c",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1350,
+                  "startColumn": 5,
+                  "endLine": 1350,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "    nop = (instr->cat2.src2_r * 2) + instr->cat2.src1_r;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "f594c4c1a4f8bcdf8919822ccdb719103e9f89985c672e81106d0764fbb2a131fd84b9f1793697bda4c4ab5465450a21628d05c8bf9099cd8cc0f5402e641607_0"
           },
           "properties": {}
         },
@@ -8120,6 +8121,37 @@
           "properties": {}
         },
         {
+          "ruleId": "b60fb930-c06a-3cc6-8ad6-98674d1e4bbb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/ir3.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 844,
+                  "startColumn": 24,
+                  "endLine": 844,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "static inline unsigned dest_regs(struct ir3_instruction *instr)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "f8d8fe1bbc4cae31ba2de48deddb70a81b007fd027e9d3c59fd520f84397174ae535c1fcd3d7d03978b59003cc71b29269c2f2ca30a5422b84a1fc5eb7a8d17e_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "ac0a0bb3-f545-301b-a4a9-1f5c991baf94",
           "kind": "fail",
           "level": "warning",
@@ -8182,37 +8214,6 @@
           "properties": {}
         },
         {
-          "ruleId": "b60fb930-c06a-3cc6-8ad6-98674d1e4bbb",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/ir3.h",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 844,
-                  "startColumn": 24,
-                  "endLine": 844,
-                  "endColumn": 33,
-                  "snippet": {
-                    "text": "static inline unsigned dest_regs(struct ir3_instruction *instr)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "f8d8fe1bbc4cae31ba2de48deddb70a81b007fd027e9d3c59fd520f84397174ae535c1fcd3d7d03978b59003cc71b29269c2f2ca30a5422b84a1fc5eb7a8d17e_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "ebba3743-ec29-3671-83ac-e458a2a5219a",
           "kind": "fail",
           "level": "warning",
@@ -8240,68 +8241,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "e7df65e4b8f5ad5e67454e230ac77e466d4d8e002d03970d8c24d0dc968236b9f1e09ffb45e87aace7cee8cae490f462a1229b91732d3e6e249aa38f1785cd29_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "ad5bd98a-2e87-327b-bda5-f52d4da7e000",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/ir3.h",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1310,
-                  "startColumn": 11,
-                  "endLine": 1310,
-                  "endColumn": 60,
-                  "snippet": {
-                    "text": "\tunsigned flags = (type_size(type) < 32) ? IR3_REG_HALF : 0;"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "1220a394fbceee4d6ca2734b60ab7a00d95c298ef5a1b2b54509062934ece7bfb57228a0c513c39a34836e1f8bd0ea6820acc5d1a9d756eff495bf347f13b9e9_1"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "39dcc581-0463-31ed-aa02-71b2149358b9",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/ir3.h",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1366,
-                  "startColumn": 11,
-                  "endLine": 1366,
-                  "endColumn": 68,
-                  "snippet": {
-                    "text": "\tunsigned dst_flags = (type_size(dst_type) < 32) ? IR3_REG_HALF : 0;"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "b5c5624effacc687dc981bc54bd01ce911097c8de95d900453c167bad5099b72262eb3588f1aac2d51f58527f90385e53c54cfd7010a1e89ca278d1ac009649f_0"
           },
           "properties": {}
         },
@@ -8337,6 +8276,68 @@
           "properties": {}
         },
         {
+          "ruleId": "39dcc581-0463-31ed-aa02-71b2149358b9",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/ir3.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1366,
+                  "startColumn": 11,
+                  "endLine": 1366,
+                  "endColumn": 68,
+                  "snippet": {
+                    "text": "\tunsigned dst_flags = (type_size(dst_type) < 32) ? IR3_REG_HALF : 0;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "b5c5624effacc687dc981bc54bd01ce911097c8de95d900453c167bad5099b72262eb3588f1aac2d51f58527f90385e53c54cfd7010a1e89ca278d1ac009649f_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "ad5bd98a-2e87-327b-bda5-f52d4da7e000",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/ir3.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1310,
+                  "startColumn": 11,
+                  "endLine": 1310,
+                  "endColumn": 60,
+                  "snippet": {
+                    "text": "\tunsigned flags = (type_size(type) < 32) ? IR3_REG_HALF : 0;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "1220a394fbceee4d6ca2734b60ab7a00d95c298ef5a1b2b54509062934ece7bfb57228a0c513c39a34836e1f8bd0ea6820acc5d1a9d756eff495bf347f13b9e9_1"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "d15e20c5-9140-3250-a5a7-26197edd4d98",
           "kind": "fail",
           "level": "warning",
@@ -8368,37 +8369,6 @@
           "properties": {}
         },
         {
-          "ruleId": "13119517-369c-3787-a577-45b656ef5be0",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/util/bitscan.h",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 208,
-                  "startColumn": 1,
-                  "endLine": 208,
-                  "endColumn": 14,
-                  "snippet": {
-                    "text": "util_last_bit(unsigned u)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "2bbecdc7f6ed8ea8dd49fc6e2011213a215432c6f4509cdfa795268f8f28effd8b5fea26b2a8d1eb12b4cf659b4acfe4cadb170e8462013b2396151d586beb83_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "306e534c-58c8-39ee-ac51-5621db696466",
           "kind": "fail",
           "level": "warning",
@@ -8426,6 +8396,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "ac9dfce059dc67c4b62dcdca647a9122783b771081445db7652ed24f3f49f096f793b1234b2af5b6e58ac38b6c66718a2e64d92e19e870ca63db2b3d9ce879f4_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "13119517-369c-3787-a577-45b656ef5be0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/util/bitscan.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 208,
+                  "startColumn": 1,
+                  "endLine": 208,
+                  "endColumn": 14,
+                  "snippet": {
+                    "text": "util_last_bit(unsigned u)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "2bbecdc7f6ed8ea8dd49fc6e2011213a215432c6f4509cdfa795268f8f28effd8b5fea26b2a8d1eb12b4cf659b4acfe4cadb170e8462013b2396151d586beb83_0"
           },
           "properties": {}
         },
@@ -8523,37 +8524,6 @@
           "properties": {}
         },
         {
-          "ruleId": "d7ed3405-c517-3e68-ad06-f30411f7bab5",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/util/bitscan.h",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 283,
-                  "startColumn": 4,
-                  "endLine": 283,
-                  "endColumn": 31,
-                  "snippet": {
-                    "text": "   assert(start + count <= 64);"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "ffbae75fcf13ed7d6c756481b3183bdfc205c8917b89e9ae80cda2e8776879cd1e5027c4e607a757a7161f9e3b06051c41c1100d8b3e2caaa9516da4d5e68f0c_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "8c644cf4-4526-335f-b858-d8b2c84e4f0b",
           "kind": "fail",
           "level": "warning",
@@ -8585,6 +8555,37 @@
           "properties": {}
         },
         {
+          "ruleId": "d7ed3405-c517-3e68-ad06-f30411f7bab5",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/util/bitscan.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 283,
+                  "startColumn": 4,
+                  "endLine": 283,
+                  "endColumn": 31,
+                  "snippet": {
+                    "text": "   assert(start + count <= 64);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "ffbae75fcf13ed7d6c756481b3183bdfc205c8917b89e9ae80cda2e8776879cd1e5027c4e607a757a7161f9e3b06051c41c1100d8b3e2caaa9516da4d5e68f0c_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "51640982-3f38-38b6-a9d5-9b7d774d4e68",
           "kind": "fail",
           "level": "warning",
@@ -8612,6 +8613,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "728f166fc4e5030e6fc1a5743af23e6d6647a38c4551c2110e41845ca6d9ff88e71704ad64b0d90034efe8e0576ca1a7a9186fa7af20d15ebc152f448bb10dc8_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "2b3d4794-31ef-3956-91b7-3a9194796740",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "disassemblers/adreno/util/bitset.h",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 4,
+                  "endLine": 124,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "   bit = ffs(*tmp) - 1;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "b6903fbcc7cae422ddf19839349929c7e32716164b491b6065c5353af7c442892a3c61af3f40628ac0b484d4913c86f5b5833e33dd905eb04f47a77139d85a9c_0"
           },
           "properties": {}
         },
@@ -8674,37 +8706,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "304d967c8d25acc267c3f04b92b98bf4687b80a9c284236eb703e927bce5dbfcb3e104a507af6fba5e6fcff97f1971ff9762207455b8e17b2442ce7b3ce7d531_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "2b3d4794-31ef-3956-91b7-3a9194796740",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "disassemblers/adreno/util/bitset.h",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 124,
-                  "startColumn": 4,
-                  "endLine": 124,
-                  "endColumn": 23,
-                  "snippet": {
-                    "text": "   bit = ffs(*tmp) - 1;"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "b6903fbcc7cae422ddf19839349929c7e32716164b491b6065c5353af7c442892a3c61af3f40628ac0b484d4913c86f5b5833e33dd905eb04f47a77139d85a9c_0"
           },
           "properties": {}
         },
@@ -8926,37 +8927,6 @@
           "properties": {}
         },
         {
-          "ruleId": "d7bfa525-9665-3d53-bc2d-94a88f47bd23",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/hlb_cifar10.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 109,
-                  "startColumn": 17,
-                  "endLine": 109,
-                  "endColumn": 23,
-                  "snippet": {
-                    "text": "      lambda x: x / 9.,"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "138097fbe96ce8142fa8b54f1e2b4fb2717d055b73d29133a60f9b923165b38a98b91d569a650ebdda4e27cbc354cde72f1d7f6d724d0c80fc2f0f69b73ad41b_2"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "da4f3c8e-dd8b-3e92-a972-999fc243bf0a",
           "kind": "fail",
           "level": "warning",
@@ -8984,6 +8954,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "de6a6b78666a21b4cb1a62e115279d8502d98ba2e6c90be3829c23d7b847451c1723841d5b20499044feda465268959e3ee9c14f691eb0099ef70b702d3a1c2b_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "d7bfa525-9665-3d53-bc2d-94a88f47bd23",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/hlb_cifar10.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 17,
+                  "endLine": 109,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "      lambda x: x / 9.,"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "138097fbe96ce8142fa8b54f1e2b4fb2717d055b73d29133a60f9b923165b38a98b91d569a650ebdda4e27cbc354cde72f1d7f6d724d0c80fc2f0f69b73ad41b_2"
           },
           "properties": {}
         },
@@ -9050,37 +9051,6 @@
           "properties": {}
         },
         {
-          "ruleId": "9307f797-a81e-3f37-b088-825b6407777c",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` only makes sense inside a function"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/mask_rcnn.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 33,
-                  "endLine": 74,
-                  "endColumn": 2,
-                  "snippet": {
-                    "text": "transforms = lambda size_scale: T.Compose(\n  [\n    Resize(int(800*size_scale), int(1333*size_scale)),\n    T.ToTensor(),\n    Normalize(\n      mean=[102.9801, 115.9465, 122.7717], std=[1., 1., 1.], to_bgr255=True\n    ),\n  ]\n)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "d89afa5cb1cccbdb68b8400234860d981eb306259fa11bfe6aba7be2af51e371a4b1552178857677354c7168d9a093b25f5109fccc44a56d12b70259bc37d5fe_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "7d646895-88d4-3745-a2c5-dde10aa8f638",
           "kind": "fail",
           "level": "warning",
@@ -9108,6 +9078,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "3084fe9932d044cd65030891dd6dcec49a1ae5f98e1c14c4559ef089893660d58086c7c3fc7b454e73c251b41ce3e49f51f1bad76678ef8ebf3698647b88acd7_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "9307f797-a81e-3f37-b088-825b6407777c",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` only makes sense inside a function"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/mask_rcnn.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 33,
+                  "endLine": 74,
+                  "endColumn": 2,
+                  "snippet": {
+                    "text": "transforms = lambda size_scale: T.Compose(\n  [\n    Resize(int(800*size_scale), int(1333*size_scale)),\n    T.ToTensor(),\n    Normalize(\n      mean=[102.9801, 115.9465, 122.7717], std=[1., 1., 1.], to_bgr255=True\n    ),\n  ]\n)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "d89afa5cb1cccbdb68b8400234860d981eb306259fa11bfe6aba7be2af51e371a4b1552178857677354c7168d9a093b25f5109fccc44a56d12b70259bc37d5fe_0"
           },
           "properties": {}
         },
@@ -9267,37 +9268,6 @@
           "properties": {}
         },
         {
-          "ruleId": "6de61cfa-2e19-39e0-81d4-faca9165366b",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`pass` is the body of function train_retinanet. Consider removing this or raise NotImplementedError() if this is a TODO"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/mlperf/model_train.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 321,
-                  "startColumn": 1,
-                  "endLine": 323,
-                  "endColumn": 7,
-                  "snippet": {
-                    "text": "def train_retinanet():\n  # TODO: Retinanet\n  pass"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "56c6021aaa47e60d39cb0a21b11222e05fc2c44cb4e4f1dac04a2df67837e5922071b912c04e9bdd27ef60bf9fde8faf519f017ffadd4d9564fe6678cd8c886b_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "ec8f086b-4118-3520-b88e-37ed57a55a8c",
           "kind": "fail",
           "level": "warning",
@@ -9360,6 +9330,37 @@
           "properties": {}
         },
         {
+          "ruleId": "6de61cfa-2e19-39e0-81d4-faca9165366b",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`pass` is the body of function train_retinanet. Consider removing this or raise NotImplementedError() if this is a TODO"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/mlperf/model_train.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 321,
+                  "startColumn": 1,
+                  "endLine": 323,
+                  "endColumn": 7,
+                  "snippet": {
+                    "text": "def train_retinanet():\n  # TODO: Retinanet\n  pass"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "56c6021aaa47e60d39cb0a21b11222e05fc2c44cb4e4f1dac04a2df67837e5922071b912c04e9bdd27ef60bf9fde8faf519f017ffadd4d9564fe6678cd8c886b_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "9db78396-728e-3b60-9b82-a2a72de1ca85",
           "kind": "fail",
           "level": "warning",
@@ -9391,37 +9392,6 @@
           "properties": {}
         },
         {
-          "ruleId": "5a2870e9-491b-3560-b071-1527a5b812d2",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`pass` is the body of function train_maskrcnn. Consider removing this or raise NotImplementedError() if this is a TODO"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/mlperf/model_train.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 567,
-                  "startColumn": 1,
-                  "endLine": 569,
-                  "endColumn": 7,
-                  "snippet": {
-                    "text": "def train_maskrcnn():\n  # TODO: Mask RCNN\n  pass"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "7348c252f9380ad9fbea0a59ddfd2488cd163ba06c37dade8e41312f91adce8e6aaaf5ed69193ba32ec42169a8f0686cbe57c4c1ee2443ef27d76c30b541c32d_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "2e04e563-0c84-3f68-8ac5-87cae8f6cd33",
           "kind": "fail",
           "level": "warning",
@@ -9449,6 +9419,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "44b6d993f7ca11c15842fb96a8cb2466f2512bc11d1de530b8086ac7e86a24a8eee7325f2ec8601cffffd9506def8b5278a50b87df08bfebd8f050633a87bc89_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "5a2870e9-491b-3560-b071-1527a5b812d2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`pass` is the body of function train_maskrcnn. Consider removing this or raise NotImplementedError() if this is a TODO"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/mlperf/model_train.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 567,
+                  "startColumn": 1,
+                  "endLine": 569,
+                  "endColumn": 7,
+                  "snippet": {
+                    "text": "def train_maskrcnn():\n  # TODO: Mask RCNN\n  pass"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "7348c252f9380ad9fbea0a59ddfd2488cd163ba06c37dade8e41312f91adce8e6aaaf5ed69193ba32ec42169a8f0686cbe57c4c1ee2443ef27d76c30b541c32d_0"
           },
           "properties": {}
         },
@@ -11592,37 +11593,6 @@
           "properties": {}
         },
         {
-          "ruleId": "36350bd2-753e-3dbe-aac2-3c9112b617f9",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Detected possible formatted SQL query. Use parameterized queries instead."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "extra/dump_cache.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 5,
-                  "endLine": 12,
-                  "endColumn": 50,
-                  "snippet": {
-                    "text": "    cur2.execute(f\"SELECT COUNT(*) FROM {table}\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "04f6284c01256cd356b8a10570b59403aa37bae31ded37cb98117045ec5bd072a34accfc77acb88d3922d183677ecfa2c8382e30ebd877ceaa8c4f34346da42e_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "b334b3eb-6141-35b8-8259-94f64a620d51",
           "kind": "fail",
           "level": "warning",
@@ -11650,6 +11620,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "06ace74a31809bc71283a0edbbb50622f9763509af86e4583fc182b152527cf11e2d1e0ce28af3eff178720d391fb1c5dca81d8b5097e9dddb5394f2b0a6c0d4_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "36350bd2-753e-3dbe-aac2-3c9112b617f9",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected possible formatted SQL query. Use parameterized queries instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "extra/dump_cache.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 5,
+                  "endLine": 12,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    cur2.execute(f\"SELECT COUNT(*) FROM {table}\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "04f6284c01256cd356b8a10570b59403aa37bae31ded37cb98117045ec5bd072a34accfc77acb88d3922d183677ecfa2c8382e30ebd877ceaa8c4f34346da42e_0"
           },
           "properties": {}
         },
@@ -13607,37 +13608,6 @@
           "properties": {}
         },
         {
-          "ruleId": "bb232b76-ab76-3ce0-a184-4bee3dd08d31",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "key `3` is uselessly assigned twice"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "extra/qcom_gpu_driver/msm_kgsl.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 131,
-                  "startColumn": 34,
-                  "endLine": 138,
-                  "endColumn": 2,
-                  "snippet": {
-                    "text": "kgsl_user_mem_type__enumvalues = {\n    0: 'KGSL_USER_MEM_TYPE_PMEM',\n    1: 'KGSL_USER_MEM_TYPE_ASHMEM',\n    2: 'KGSL_USER_MEM_TYPE_ADDR',\n    3: 'KGSL_USER_MEM_TYPE_ION',\n    3: 'KGSL_USER_MEM_TYPE_DMABUF',\n    7: 'KGSL_USER_MEM_TYPE_MAX',\n}"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "b392d1fea4b338da2f3b1be9e32208c45a34dfe3fac7ce0cf267513aa81bab20b704967afc449f9deb4c79cd4da2a118511f23e41f6c420cc5c7504f20821a8f_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "a329cc61-8eef-3b36-95eb-81ef58718567",
           "kind": "fail",
           "level": "warning",
@@ -13665,6 +13635,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "d21a4513f83c35a26712466253fca2c240a6b6fc4d271ca99987058a6e1068cd5d2e81145280360de42f16c567e86e184f4d89efad8fa9faac802290b6219b65_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "bb232b76-ab76-3ce0-a184-4bee3dd08d31",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "key `3` is uselessly assigned twice"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "extra/qcom_gpu_driver/msm_kgsl.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 34,
+                  "endLine": 138,
+                  "endColumn": 2,
+                  "snippet": {
+                    "text": "kgsl_user_mem_type__enumvalues = {\n    0: 'KGSL_USER_MEM_TYPE_PMEM',\n    1: 'KGSL_USER_MEM_TYPE_ASHMEM',\n    2: 'KGSL_USER_MEM_TYPE_ADDR',\n    3: 'KGSL_USER_MEM_TYPE_ION',\n    3: 'KGSL_USER_MEM_TYPE_DMABUF',\n    7: 'KGSL_USER_MEM_TYPE_MAX',\n}"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "b392d1fea4b338da2f3b1be9e32208c45a34dfe3fac7ce0cf267513aa81bab20b704967afc449f9deb4c79cd4da2a118511f23e41f6c420cc5c7504f20821a8f_0"
           },
           "properties": {}
         },
@@ -14692,6 +14693,37 @@
           "properties": {}
         },
         {
+          "ruleId": "fdac3c55-0f57-3809-93de-a94eae8ca805",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tinygrad/engine/schedule.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 277,
+                  "startColumn": 7,
+                  "endLine": 277,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "      pickle.dump(SCHEDULES, open(fp, \"wb\"))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "96d688a4aefc500d5442ce2d9f8e369f8cb42db563230fab129bafc9ccb9e26fc3e1a48ebbc897968e731b4a78167625c60e262bd5a3f9a0a10ec273a5a982f4_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "9373f6e3-8005-35ba-b4b9-9d71b07e1664",
           "kind": "fail",
           "level": "warning",
@@ -14785,37 +14817,6 @@
           "properties": {}
         },
         {
-          "ruleId": "50c16f3a-02e2-312d-8790-dd485015ced6",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Detected possible formatted SQL query. Use parameterized queries instead."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "tinygrad/helpers.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 184,
-                  "startColumn": 5,
-                  "endLine": 184,
-                  "endColumn": 127,
-                  "snippet": {
-                    "text": "    cur.execute(f\"CREATE TABLE IF NOT EXISTS '{table}_{VERSION}' ({ltypes}, val blob, PRIMARY KEY ({', '.join(key.keys())}))\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "63d997d9edcefc897cb7674555d1c441c1c51ffb57851f36ad15f376d769336000feb07db5d3714e7697df1a74ecb7336846c490cfe2223a1b178c484b16c65a_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "082c14db-2b9f-3ab1-b80d-9a330ea73a60",
           "kind": "fail",
           "level": "warning",
@@ -14843,6 +14844,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "fb2353641d59115ffd40dc939cbaff32998ee1b41b3e59cee46ceb08a33b93983f6de08055f96d77cf076f06d45fc0d2fc220900bf120e78cb2418106aca3935_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "50c16f3a-02e2-312d-8790-dd485015ced6",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected possible formatted SQL query. Use parameterized queries instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tinygrad/helpers.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 184,
+                  "startColumn": 5,
+                  "endLine": 184,
+                  "endColumn": 127,
+                  "snippet": {
+                    "text": "    cur.execute(f\"CREATE TABLE IF NOT EXISTS '{table}_{VERSION}' ({ltypes}, val blob, PRIMARY KEY ({', '.join(key.keys())}))\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "63d997d9edcefc897cb7674555d1c441c1c51ffb57851f36ad15f376d769336000feb07db5d3714e7697df1a74ecb7336846c490cfe2223a1b178c484b16c65a_0"
           },
           "properties": {}
         },
@@ -14909,37 +14941,6 @@
           "properties": {}
         },
         {
-          "ruleId": "a0171b88-aafd-349b-bb76-08bed5f12e3a",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` only makes sense inside a function"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "tinygrad/ops.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 112,
-                  "startColumn": 31,
-                  "endLine": 112,
-                  "endColumn": 111,
-                  "snippet": {
-                    "text": "  BufferOps.LOAD: lambda arg: FlopCounter(arg.st.shape, 0, {arg.idx: arg.dtype.itemsize * arg.st.real_size()}),"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "1b7ab21b5b94340b36a37be33aee8b65436b1cf0e8483fb0bb98e6be268f971137eb9bbcc427af27c824b6694d3b52934c1e4a9df19ae572ef46efd0c092b474_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "5cbc6814-c497-3120-a6b1-c20887103377",
           "kind": "fail",
           "level": "warning",
@@ -14967,6 +14968,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "2b546a6bd03162e0a18f17768a46645d1302cc47dcbb8d224701e4285f689170c6fff2bca21c7b774299ef99403cff95236e027691b17a2d0ff09f34092a32e3_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "a0171b88-aafd-349b-bb76-08bed5f12e3a",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` only makes sense inside a function"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tinygrad/ops.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 31,
+                  "endLine": 112,
+                  "endColumn": 111,
+                  "snippet": {
+                    "text": "  BufferOps.LOAD: lambda arg: FlopCounter(arg.st.shape, 0, {arg.idx: arg.dtype.itemsize * arg.st.real_size()}),"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "1b7ab21b5b94340b36a37be33aee8b65436b1cf0e8483fb0bb98e6be268f971137eb9bbcc427af27c824b6694d3b52934c1e4a9df19ae572ef46efd0c092b474_0"
           },
           "properties": {}
         },
@@ -16242,37 +16274,6 @@
           "properties": {}
         },
         {
-          "ruleId": "57605913-21e0-3fee-8db4-92afbc20f917",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Using 'output_file.name' without '.flush()' or '.close()' may cause an error because the file may not exist when 'output_file.name' is used. Use '.flush()' or close the file before using 'output_file.name'."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "tinygrad/runtime/ops_clang.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 27,
-                  "endLine": 14,
-                  "endColumn": 43,
-                  "snippet": {
-                    "text": "      return pathlib.Path(output_file.name).read_bytes()"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "6160a4f0c30782f83ae44727914e8bdd81ace16bd9fbd66ff710051a39213a6bb026473014eba3e15db61df0ce7ebffe373f48297bb106e3e637200fb7d5a742_1"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "686bbfb6-bb88-3463-a879-5d64c8ae24ac",
           "kind": "fail",
           "level": "warning",
@@ -16831,37 +16832,6 @@
           "properties": {}
         },
         {
-          "ruleId": "fc9cff88-957e-3e09-b77f-cbd133040ed2",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "tinygrad/runtime/ops_hsa.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 69,
-                  "startColumn": 74,
-                  "endLine": 69,
-                  "endColumn": 205,
-                  "snippet": {
-                    "text": "    self.kernargs_segment_size = init_c_var(ctypes.c_uint32(), lambda x: check(hsa.hsa_executable_symbol_get_info(self.kernel, hsa.HSA_EXECUTABLE_SYMBOL_INFO_KERNEL_KERNARG_SEGMENT_SIZE, ctypes.byref(x)))).value # noqa: E501"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "9bb94e96ce003f5711fe37edaa0265dae67ae47598c464e8878f0360b8ae881a70ec6c31a60ea92e938f7d8ca18d320530946d0d16eda80c192e509ae4a234f1_4"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "a2383e02-4760-30ed-9bd8-dd6c2ffc7faf",
           "kind": "fail",
           "level": "warning",
@@ -16889,6 +16859,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "9bb94e96ce003f5711fe37edaa0265dae67ae47598c464e8878f0360b8ae881a70ec6c31a60ea92e938f7d8ca18d320530946d0d16eda80c192e509ae4a234f1_5"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "fc9cff88-957e-3e09-b77f-cbd133040ed2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tinygrad/runtime/ops_hsa.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 74,
+                  "endLine": 69,
+                  "endColumn": 205,
+                  "snippet": {
+                    "text": "    self.kernargs_segment_size = init_c_var(ctypes.c_uint32(), lambda x: check(hsa.hsa_executable_symbol_get_info(self.kernel, hsa.HSA_EXECUTABLE_SYMBOL_INFO_KERNEL_KERNARG_SEGMENT_SIZE, ctypes.byref(x)))).value # noqa: E501"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "9bb94e96ce003f5711fe37edaa0265dae67ae47598c464e8878f0360b8ae881a70ec6c31a60ea92e938f7d8ca18d320530946d0d16eda80c192e509ae4a234f1_4"
           },
           "properties": {}
         },
@@ -16955,37 +16956,6 @@
           "properties": {}
         },
         {
-          "ruleId": "7d31b4e3-d5ac-3c9f-b33d-1cd2c19de787",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "tinygrad/runtime/ops_metal.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 38,
-                  "startColumn": 9,
-                  "endLine": 38,
-                  "endColumn": 130,
-                  "snippet": {
-                    "text": "        os.system(f\"cd {pathlib.Path(__file__).parents[2]}/disassemblers/applegpu && python3 compiler_explorer.py {shader.name}\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "76bed37581ede14740617f830fe1b9259962bea638dd4028c838a54f26f9ab06598cc49be68a1acbf62ea77f6867a4d8e18bdc7a52dabb95ca6d3d424c646f6b_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "347fd815-a97d-395f-8148-9760a7522f2e",
           "kind": "fail",
           "level": "warning",
@@ -17017,33 +16987,33 @@
           "properties": {}
         },
         {
-          "ruleId": "989f18d5-b1eb-34d0-87af-1c374707b095",
+          "ruleId": "7d31b4e3-d5ac-3c9f-b33d-1cd2c19de787",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+            "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "tinygrad/runtime/ops_python.py",
+                  "uri": "tinygrad/runtime/ops_metal.py",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 26,
-                  "startColumn": 69,
-                  "endLine": 26,
-                  "endColumn": 86,
+                  "startLine": 38,
+                  "startColumn": 9,
+                  "endLine": 38,
+                  "endColumn": 130,
                   "snippet": {
-                    "text": "    self.uops: List[Tuple[UOps, Optional[DType], List[int], Any]] = pickle.loads(lib)"
+                    "text": "        os.system(f\"cd {pathlib.Path(__file__).parents[2]}/disassemblers/applegpu && python3 compiler_explorer.py {shader.name}\")"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "27fe33df555272059beb49f79882a51d859ceb7fcf0e96f3b655af700ee207315b836dc9abb09397a2a7ea3bd42e8965482c4bc922a52c802a4aea925244655c_0"
+            "matchBasedId/v1": "76bed37581ede14740617f830fe1b9259962bea638dd4028c838a54f26f9ab06598cc49be68a1acbf62ea77f6867a4d8e18bdc7a52dabb95ca6d3d424c646f6b_0"
           },
           "properties": {}
         },
@@ -17075,6 +17045,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "962c41bcb4d327cea1c7fd974422cb416697df261046d9700994b173dd4444e0bdedea8082d958e759f678c25a59508647735df8b05d00100816dcf1cc02b0a4_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "989f18d5-b1eb-34d0-87af-1c374707b095",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "tinygrad/runtime/ops_python.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 69,
+                  "endLine": 26,
+                  "endColumn": 86,
+                  "snippet": {
+                    "text": "    self.uops: List[Tuple[UOps, Optional[DType], List[int], Any]] = pickle.loads(lib)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "27fe33df555272059beb49f79882a51d859ceb7fcf0e96f3b655af700ee207315b836dc9abb09397a2a7ea3bd42e8965482c4bc922a52c802a4aea925244655c_0"
           },
           "properties": {}
         },
